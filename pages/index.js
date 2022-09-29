@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from 'react';
+import Card from './../components/card/card';
 
 import {
   Anchor,
@@ -141,7 +142,7 @@ export default function Home() {
       </Head>
       <Box flex role="main" pad={{ vertical: "large" }}>
         <Header background="brand">
-          <Button icon={<HomeIcon />} hoverIndicator />
+        <Button icon={<HomeIcon />} hoverIndicator href='/'/>
           <Menu label="account" items={[{ label: 'logout' }]} />
           </Header>
           <Nav direction="row" background="brand" pad="medium">
@@ -170,7 +171,7 @@ export default function Home() {
             justify="center"
             align="center"
           >
-            <strong>Box 1</strong>
+          <Card />
           </Box>
           <Box
             gridArea="two"
@@ -178,7 +179,7 @@ export default function Home() {
             justify="center"
             align="center"
           >
-            <strong>Box 2</strong>
+             <Card />
           </Box>
           <Box
             gridArea="three"
@@ -186,7 +187,7 @@ export default function Home() {
             justify="center"
             align="center"
           >
-            <strong>Box 3</strong>
+             <Card />
           </Box>
           <Box
             gridArea="four"
@@ -194,7 +195,7 @@ export default function Home() {
             justify="center"
             align="center"
           >
-            <strong>Box 4</strong>
+             <Card />
           </Box>
         </ResponsiveGrid>
       </Box>

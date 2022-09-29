@@ -32,7 +32,7 @@ export default function Work() {
       </Head>
       <Box flex role="main" pad={{ vertical: "large" }}>
         <Header background="brand">
-          <Button icon={<HomeIcon />} hoverIndicator />
+          <Button icon={<HomeIcon />} hoverIndicator href='/'/>
           <Menu label="account" items={[{ label: 'logout' }]} />
           </Header>
       <Box/> 
